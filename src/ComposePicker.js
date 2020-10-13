@@ -43,8 +43,6 @@ export default class ComposePicker extends Component {
       date: new Date(),
       focus: "startDate",
       currentDate: moment(),
-      textStartDate: "Start Date",
-      textEndDate: "End Date",
     };
   }
   isDateBlocked = (date) => {
@@ -202,8 +200,8 @@ export default class ComposePicker extends Component {
                   selectedTextColor={this.props.selectedTextColor || undefined}
                   mode={this.props.mode || "single"}
                   currentDate={this.state.currentDate}
-                  textStartDate={this.state.textStartDate}
-                  textEndDate={this.state.textEndDate}
+                  textStartDate={this.props.textStartDate}
+                  textEndDate={this.props.textEndDate}
                 />
               </View>
               <View
