@@ -212,6 +212,7 @@ export default class ComposePicker extends Component {
                   flexDirection: "row",
                   justifyContent: "space-between",
                   alignItems: "center",
+                  paddingHorizontal: 20,
                 }}
               >
                 <TouchableOpacity
@@ -220,7 +221,7 @@ export default class ComposePicker extends Component {
                   style={{ paddingVertical: 10, paddingHorizontal: 20 }}
                 >
                   <Text style={{ fontSize: 16, fontWeight: "600" }}>
-                    {this.props.cancelText}
+                    {this.props.cancelText || "Cancel"}
                   </Text>
                 </TouchableOpacity>
 
